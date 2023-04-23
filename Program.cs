@@ -1,8 +1,12 @@
+using NETCore_React_PrimerApp.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<NetcoreReactContext>();
 
 var app = builder.Build();
 
